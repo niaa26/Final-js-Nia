@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Selling Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/slider-pro-js/build/slider-pro.css"
+    />
+</head>
+<body>
+        <!-- Form to enter name -->
+    <form id="nameForm">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Placeholder for the welcome message -->
+    <div id="greeting"></div>
+
+    <!-- darkmode bullshit -->
+    <div id="darkModeToggle">
+        <button>Dark Mode</button>
+        <p>Click the button to switch between light and dark mode.</p>
+    </div>
+    
+    
+    <div class="content">
+        <div id="navbar" class="navbar">
+            <div class="burger" id="burger">
+                <div class="bar" id="bar"></div>
+                <div class="bar" id="bar"></div>
+                <div class="bar" id="bar"></div>
+            </div>
+            <div class="title">Welcome to whatever this is</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#Welcome">Welcome</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Cars">Cars</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <section id="Welcome">
+            <h1>
+                Welcome to DreamDrive Garage!
+            </h1>
+            <br />
+            <p>
+                Discover your perfect car! With our fun and easy-to-use platform, you can explore the most popular rides, search by year, check out detailed specs, and more. Whether you’re car shopping, researching, or just browsing—let's help you find the ride that suits your style.
+            </p>
+            <button id="myBtn" title="Go to top">
+                Top
+            </button>
+        </section>
+        <section class="mid_sec">
+            <h2 class="mid_sec-title">Our cars</h2>
+            <div class="mid_sec-line"></div>
+            <div class="mid_sec-slider">
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/2022_Toyota_Corolla_L_in_Classic_Silver_Metallic%2C_Front_Right%2C_03-20-2022.jpg" alt="Toyota Corolla" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Toyota Corolla</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$25,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://vehicle-images.dealerinspire.com/9053-110008765/SHHFK7H49MU208257/e18a53f83de12b3a4e361428b3d29a66.jpg" alt="Honda Accord" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Honda Accord</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$30,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://lp-auto-assets.s3.amazonaws.com/20/Ford/mustang/T1/header.jpg" alt="Ford Mustang" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Ford Mustang</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$50,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://static.foxdealer.com/513/2019/10/2019-Chevy-Equinox-Kinetic-Blue-Metallic-side-view_o.jpg" alt="Chevy Equinox" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Chevy Equinox</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$40,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://images.customwheeloffset.com/web-compressed/1923093-1-2020-altima-nissan-sr-stock-stock-esr-rf1-black.jpg" alt="Nissan Altima" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Nissan Altima</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$28,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/2021-bmw-3-series-mmp-1-1593549868.jpg" alt="BMW 3 Series" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">BMW 3 Series</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$45,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2021/12/tesla-model-3-2022-2562335.jpg?tf=3840x" alt="Tesla Model 3" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Tesla Model 3</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$55,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/2021-audi-q5-mmp-1-1616682622.jpg" alt="Audi Q5" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Audi Q5</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$48,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://images.clickdealer.co.uk/vehicles/5290/5290711/2820x2115/123123359.jpg" alt="Chevrolet Silverado" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Chevrolet Silverado</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$42,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://di-uploads-pod2.dealerinspire.com/carlblackchevybuickgmckennesaw/uploads/2018/07/chevy-suvs-0302.png" alt="Chevy SUVs" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Chevy SUVs</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$35,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://static.motor.es/fotos-noticias/2021/03/subaru-outback-2021-fecha-lanzamiento-202176682-1617008744_1.jpg" alt="Subaru Outback" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Subaru Outback</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$32,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://i.ytimg.com/vi/rsEojUqoiMs/maxresdefault.jpg" alt="Chevy Silverado" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Chevy Silverado</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$37,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://storage.googleapis.com/wackk-images-production-4f204ab/ok8rrj84oued155evu3bdz9zzyhs" alt="BMW X5" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">BMW X5</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$60,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ford_F-150_Raptor_2020.jpg" alt="Ford F-150 Raptor" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Ford F-150 Raptor</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$70,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/2021_Mercedes-Benz_G-Class_4MATIC_5.5_V8_Black.jpg" alt="Mercedes-Benz G-Class" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Mercedes-Benz G-Class</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$135,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/resources/general/newsroom/2020/2020_Ford_Powerboost_Hybrid_F150.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" alt="Ford PowerBoost Hybrid F150" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Ford PowerBoost Hybrid F150</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$48,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://carphotos.cardomain.com/ride_images/3/479/5739/32834830029_large.jpg" alt="Jeep Grand Cherokee" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Jeep Grand Cherokee</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$60,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/2018_Jeep_Wrangler.jpg" alt="Jeep Wrangler" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Jeep Wrangler</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$42,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="mid_sec-card">
+                    <div class="mid_sec-card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/2021_Jeep_Cherokee.jpg" alt="Jeep Cherokee" class="mid_sec-card-image">
+                    </div>
+                    <div class="mid_sec-card-text-container">
+                        <h3 class="mid_sec-card-title">Jeep Cherokee</h3>
+                        <div class="mid_sec-card-button-container">
+                            <span class="mid_sec-card-price">$35,000</span>
+                            <button class="mid_sec-card-button">view</button>
+                        </div>
+                    </div>
+                </article>
+                <button id="show-more-btn">Show More</button>
+            </div>
+            <div id="car-details"></div>
+        </section>
+
+
+
+        <!-- Search Form -->
+        <section id="search-form">
+            <form id="year">
+                <div class="form-group">
+                    <label for="year">Enter the year of the car that interests you</label>
+                    <input type="text" id="input" placeholder="Enter year..." />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Get cars of the year" />
+                </div>
+            </form>
+
+            <div id="car-list"></div> <!-- This is where car names will appear -->
+        </section>
+
+        
+        <section id="Contact">
+            <h1>
+                Contact Us & Leave a Review 💌
+            </h1>
+            <p>
+                Have questions, want to schedule a visit, or just share your experience? We’d love to hear from you! 
+                Fill out the form below to create an account and leave a review. Your thoughts help us grow! 💬✨
+            </p>
+        
+            <form id="registration" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                    <p class="error-text" id="error-username"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+                    <p class="error-text" id="error-email"></p>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" />
+                    <i class="fa-regular fa-eye" style="color: #ffffff" id="icon"></i>
+                    <p class="error-text" id="error-password"></p>
+                </div>
+                <div class="form-group">
+                    <label for="passwordConfirm">Repeat password:</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" />
+                    <p class="error-text" id="error-passwordConfirm"></p>
+                </div>
+                <div class="form-group">
+                    <label for="review">Leave a Review:</label>
+                    <textarea id="review" name="review" placeholder="Tell us about your experience, your favorite car, or how we can improve! 💖"></textarea>
+                    <p class="error-text" id="error-review"></p>
+                </div>
+                <div class="form-group terms">
+                    <label>
+                        <input type="checkbox" name="agree" id="terms" />
+                        I agree to the terms and conditions
+                    </label>
+                    <p class="error-text" id="error-terms"></p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register & Submit Review" />
+                </div>
+            </form>
+        </section>
+        <div id="cookie-notification">
+            <p>This website uses cookies to ensure you get the best experience.</p>
+            <button id="accept-cookies">Accept</button>
+          </div>
+            <p>&copy; 2024 Car Selling Website. All rights reserved.</p>
+        </footer>
+        <script
+            type="text/javascript"
+            src="https://unpkg.com/slider-pro-js/build/slider-pro.js"
+        ></script>
+        <script type="module" src="getCar.js"></script>
+        <script type="module" src="script.js"></script>
+    </body>
+    </html>
+    
